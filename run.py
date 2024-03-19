@@ -4,7 +4,7 @@ import argparse
 import os
 
 compiler = "clang"
-flags = "-lm"
+flags = "-O3 -lm"
 def run_perf_stat(perf_events):
     OpenJudge_Dir = "OpenJudge.100.500"
     os.makedirs('bin', exist_ok=True)
@@ -23,7 +23,7 @@ def run_perf_stat(perf_events):
                     print(f'Running {program}')
                     executable_path = os.path.join("bin", f"{program}.out")
 
-                    subprocess.run([compiler,flags, "-o", executable_path, os.path.join(programs_dir, program)])
+                    subprocess.run([compiler] + flags.split() + ["-o", executable_path, os.path.join(programs_dir, program)])
                     if os.path.exists(executable_path):
                         with open(programs_input, 'r') as input_file:
                             subprocess.run(["perf", "stat", "-o", "temp.txt", "-x,", "-e", ','.join(events_list), executable_path], stdin=input_file, stdout=subprocess.PIPE)
