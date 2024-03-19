@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+  long n,i,d,c=0,a[5],k=0,dig=0;
+  scanf("%ld",&n);
+  while(dig<4)
+  {
+    d=n%10;
+    a[k]=d;
+    k++;
+    n=n/10;
+    dig++;
+  }
+  for(i=0;i<3;i++)
+  {
+    if(a[i]==a[i+1])
+    {
+      c++; break;
+    }
+  }
+  if(c>0)
+  {
+    printf("Bad");
+  }
+  else
+  {
+    printf("Good");
+  }
+  return 0;
+}

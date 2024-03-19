@@ -1,0 +1,1 @@
+i,a=1e5;main(N){scanf("%d",&N);for(;i<N;i++)a*=1.05,a+=(a%1000)?1e3-a%1000:0;printf("%d\n",a);exit(0);}

@@ -1,0 +1,58 @@
+#include <stdio.h>
+ 
+#define WHITE 0
+#define BLACK 2
+#define GRAY 1
+#define INFTY 1000000
+int color[100],M[100][100],d[100],p[100],n;
+void prim(){
+  int u,minv;
+  int i;
+ 
+  for(i=0;i<n;i++){
+    color[i]=WHITE;
+    d[i]=INFTY;
+    p[i]=-1;
+  }
+  d[0]=0;
+  while(1){
+    minv=INFTY;
+    u=-1;
+    for(i=0;i<n;i++){
+      if(minv>d[i] && color[i]!=BLACK){
+        u=i;
+        minv=d[i];
+      }
+    }
+    if(u==-1) break;
+    color[u]=BLACK;
+    for(i=0;i<n;i++){
+      if(color[i]!=BLACK && M[u][i]!=INFTY){
+        if(d[i]>M[u][i]){
+          d[i]=M[u][i];
+          p[i]=u;
+                   color[i]=GRAY;
+        }
+      }
+    }
+  }
+  int sum=0;
+  for(i=0;i<n;i++){
+    if(p[i]!=-1)
+    sum+=M[i][p[i]];
+  }
+  printf("%d\n",sum);
+}
+ 
+int main(int argc, char const *argv[]) {
+  int i,j,e;
+  scanf("%d",&n);
+  for (i = 0; i < n; i++) {
+    for(j=0;j<n;j++){
+      scanf("%d",&e);
+      M[i][j]=(e==-1)? INFTY:e;
+    }
+  }
+  prim();
+  return 0;
+}

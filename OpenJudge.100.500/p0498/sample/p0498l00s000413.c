@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int		main(void)
+{
+	int N;
+	scanf("%d", &N);
+	printf("%d\n",(N+1)/2);
+	return (0);
+}

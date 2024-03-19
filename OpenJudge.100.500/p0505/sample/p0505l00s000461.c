@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main(){
+  int  h,n,a[10000];
+  int  cnt=0;
+  scanf("%d%d",&h,&n);
+  for(int i=0;i<n;i++){
+    scanf("%d",&a[i]);
+    h-=a[i];
+    if(h<=0){
+      printf("Yes");
+      return 0;
+    }
+  }
+  printf("No");
+  return 0;
+}

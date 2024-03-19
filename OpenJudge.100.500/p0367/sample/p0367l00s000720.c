@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(void){
+   int a,b,c,x,y=0;
+   scanf("%d %d %d\n",&a,&b,&c);
+   for(x=a; x <= b; x++){
+       if(c%x==0){
+           y++;
+       }
+   }
+    printf("%d\n",y);
+    return 0;
+}
+

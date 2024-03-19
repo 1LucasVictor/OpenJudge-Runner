@@ -1,0 +1,1 @@
+char b[9],i=9;main(){for(;i,~(b[--i]=getchar())||!puts(b+i+2););}

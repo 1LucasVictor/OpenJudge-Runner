@@ -1,0 +1,1 @@
+a,b,y,c;main(){while(scanf("%d %d",&a,&b)!=-1){c=0;y=a+b;while(y>0){y/=10;c++;}printf("%d\n",c);}exit(0);}

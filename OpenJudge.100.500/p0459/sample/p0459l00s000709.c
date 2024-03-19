@@ -1,0 +1,25 @@
+#include <stdio.h>
+ 
+int main(void) {
+  int i,x,y,ans,turu,kame;
+  i=0;
+  x=0;
+  y=0;
+  kame=0;
+  turu=0;
+  ans=0;
+  scanf("%d",&x);
+  scanf("%d",&y);
+  kame=(y-2*x)*4/2;
+  turu=(4*x-y)*2/2;
+  if(4*x>=y&&2*x<y&&y%2==0)
+  {
+    printf("Yes");
+  }
+  else
+  {
+    printf("No");
+  }
+
+  return 0;
+}

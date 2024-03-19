@@ -1,0 +1,1 @@
+main(){char s;for(;~scanf("%c",&s);putchar(64<s&&s<91?s+32:96<s&&s<123?s-32:s));exit(0);}

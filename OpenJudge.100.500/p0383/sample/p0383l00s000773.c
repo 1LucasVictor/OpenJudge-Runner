@@ -1,0 +1,63 @@
+#include <stdio.h>
+ 
+int main(void) {
+
+	// ?????????????????\???
+	int num1, num2, num3;
+	scanf("%d %d %d", &num1, &num2, &num3);
+
+	// ?????????????¬???????????????????????????????
+	int table[num1][num2];
+	
+	for(int cnt1 = 0; cnt1 < num1; cnt1++) {
+		
+		for(int cnt2 = 0; cnt2 < num2; cnt2++) {
+			
+			scanf("%d", &table[cnt1][cnt2]);
+		}
+	}
+	
+	int grid[num2][num3];
+	
+	for(int cnt1 = 0; cnt1 < num2; cnt1++) {
+		
+		for(int cnt2 = 0; cnt2 < num3; cnt2++) {
+			
+			scanf("%d", &grid[cnt1][cnt2]);
+		}
+	}
+
+	// 2??????????¬????????????????????¨?????????????
+	long sum[num1][num3];
+	
+	for(int cnt1 = 0; cnt1 < num1; cnt1++) {
+		
+		for(int cnt2 = 0; cnt2 < num3; cnt2++) {
+			
+			sum[cnt1][cnt2] = 0;
+		}
+	}
+
+	for (int cnt0 = 0; cnt0 < num1; cnt0++) {
+
+		for (int cnt1 = 0; cnt1 < num3; cnt1++) {
+
+			for (int cnt2 = 0; cnt2 < num2; cnt2++) {
+
+				sum[cnt0][cnt1] += table[cnt0][cnt2] * grid[cnt2][cnt1];
+
+			}
+			
+			if (cnt1 >= num3-1) {
+
+				printf("%ld\n", sum[cnt0][cnt1]);
+
+			} else {
+
+				printf("%ld ", sum[cnt0][cnt1]);
+
+			}
+		}
+	}
+	return 0;
+}

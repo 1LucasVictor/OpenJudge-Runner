@@ -1,0 +1,1 @@
+n,a[5000],i,j,s,m;main(){for(;~scanf("%d",&n);n&&printf("%d\n",m)){for(i=n;i--;)scanf("%d",a+i);for(m=*a,i=n;i;)for(s=0,j=i--;j--;m=s>m?s:m)s+=a[j];}}

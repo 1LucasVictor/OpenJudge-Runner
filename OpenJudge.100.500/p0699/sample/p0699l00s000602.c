@@ -1,0 +1,24 @@
+/*
+ * main.c
+ *
+ *  Created on: 2016/07/23
+ *      Author: たけぱん
+ */
+
+
+#include <stdio.h>
+
+int main(void){
+	int a,b,c;
+	scanf("%d %d %d", &a, &b, &c);
+	if(a==5&&b==5&&c==7){
+		printf("YES\n");
+	}else if(a==5&&b==7&&c==5){
+		printf("YES\n");
+	}else if(a==7&&b==5&&c==5){
+		printf("YES\n");
+	}else  {
+		printf("NO\n");
+	}
+	return 0;
+}

@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main(){
+    int a, b, c, n, i;
+    scanf("%d", &n);
+    
+    i=0;
+    while(i<n){
+        scanf("%d %d %d", &a, &b, &c);
+        if(a*a == b*b + c*c || b*b == c*c + a*a || c*c == a*a + b*b){
+        printf("YES\n");
+        }
+        else{
+            printf("NO\n");
+        }
+        i++;
+    }
+    return 0;
+}

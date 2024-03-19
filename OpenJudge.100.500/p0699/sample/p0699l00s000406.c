@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(void){
+  int a[3],cnt5=0,cnt7=0;
+  scanf("%d %d %d",&a[0],&a[1],&a[2]);
+  for(int i=0;i<3;i++){
+    if(a[i]==5){
+      cnt5++;
+    }
+    if(a[i]==7){
+      cnt7++;
+    }
+  }
+  if(cnt5==2&&cnt7==1){
+    printf("YES\n");
+  }else{
+    printf("NO\n");
+  }
+  return 0;
+}

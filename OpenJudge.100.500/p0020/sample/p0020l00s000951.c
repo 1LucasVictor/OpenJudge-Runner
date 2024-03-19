@@ -1,0 +1,1 @@
+double a,b,c,d,t,x;main(s){for(scanf("%*d");~scanf("%lf%lf%lf%lf",&a,&b,&c,&d);s++%2?x=t:puts(x!=t?"NO":"YES"))t=(b-d)/(a-c);}

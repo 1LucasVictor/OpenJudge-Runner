@@ -1,0 +1,1 @@
+a,b,d,r,p;main(c){for(;~scanf(p="%d %d\n",&a,&b);printf(p,d,a/d*b))for(c=a,d=b;r=c%d;d=r)c=d;}

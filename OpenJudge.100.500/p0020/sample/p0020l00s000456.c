@@ -1,0 +1,1 @@
+double a,b,c,d,x,y;main(s){for(scanf("%*d");~scanf("%lf%lf%lf%lf",&a,&b,&c,&d);)s++%2?y=b-d,x=a-c:puts((b-d)*x-y*(a-c)?"NO":"YES");}

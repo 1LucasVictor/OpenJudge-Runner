@@ -1,0 +1,140 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+
+
+
+int main() {
+  int i, j;
+  int wari;
+  int index = 0;
+  int nyu, saigo;
+  int flag[1000000];
+  int root[1000];
+  int suku[168];
+  int count = 0;
+
+
+
+
+  /* ????????? */
+  for (i = 0; i < 1000000; i ++) {
+    flag[i] = 1;
+  }
+
+
+
+
+  // debug
+  /* for (i = 0; i < 1000000; i ++) { */
+  /*   printf("%d %d\n", i, flag[i]); */
+  /* } */
+
+
+
+
+  /* 1000 ??\???????´???°??¨???????????° index ??????????????? */
+  for (i = 1; i < 1000; i ++) {
+    wari = 0;
+    for (j = 1; j <= i; j ++) {
+      if (i % j == 0) {
+	wari ++;
+      }
+    }
+    if (wari == 2) {
+      root[i] = 1;
+      index ++;
+    }
+  }
+
+
+
+
+  // debug
+  /* for (i = 0; i < 1000; i ++) { */
+  /*   printf("%d %d\n", i, root[i]); */
+  /* } */
+  /* printf("%d---------\n", index); */
+
+
+
+
+  /* ?????? root ?????? 0 ??????????????? */
+  i = 0;
+  while (i < index) {
+    for (j = 0; j < 1000; j ++) {
+      if (root[j] == 1) {
+	suku[i] = j;
+	i ++;
+      }
+    }
+  }
+
+
+
+
+  // debug
+  /* for (i = 0; i < index; i ++) { */
+  /*   printf("%d %d\n", i, suku[i]); */
+  /* } */
+
+
+
+
+  /* ????????¢?´¢????????????????????????????????? */
+  for (i = 0; i < 1000; i ++) {
+    flag[i] = root[i];
+  }
+
+
+
+
+  /* ????????? */
+  for (i = 1000; i < 1000000; i ++) {
+    for (j = 0; j < index; j ++) {
+      if (i % suku[j] == 0) {
+      	flag[i] = 0;
+	break;
+      }
+    }
+  }
+
+
+
+
+  // debug
+  /* for (i = 0; i < 1000000; i ++) { */
+  /*   printf("%d %d\n", i, flag[i]); */
+  /* } */
+
+
+
+
+  /* ??\??? */
+  while ((scanf("%d", &nyu)) != EOF) {
+    /** ????????????????????\????????°?????¶?´? **/
+    if (count == 30) {
+      return 0;
+    }
+
+
+
+
+    /** ?´???°?????°????????? **/
+    saigo = 0;
+    for (i = 0; i <= nyu; i ++) {
+      if (flag[i] == 1) {
+	saigo ++;
+      }
+    }
+    printf("%d\n", saigo);
+    count ++;
+  }
+
+
+
+
+  /* ?????? */
+  return 0;
+}

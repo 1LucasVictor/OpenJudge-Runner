@@ -1,0 +1,1 @@
+n;main(d){for(d=scanf("%d",&n)+99;n--;d=d*1.05+.99);n=!printf("%d\n",d*1000);}

@@ -1,0 +1,2 @@
+#define z 1000000
+a[z],b[z],n,i,x,c;main(){for(i=2;i<z;i++)a[i]=i;for(i=0;i<z;i++)if(a[i]!=0){b[x++]=i;for(c=i;c<z;c+=i)a[c]=0;}while(scanf("%d",&n)!=-1){c=0;while(b[c]<=n && b[c]!=0){c++;}printf("%d\n",c);}exit(0);}

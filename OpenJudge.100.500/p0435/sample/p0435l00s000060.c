@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+int main()
+{
+    int n,d,x,y,cnt=0;
+    long long int d_str,ans;
+    scanf("%d %d",&n,&d);
+    while(n--)
+    {
+        scanf("%d %d",&x,&y);
+        d_str=d*d;
+        ans=x*x+y*y;
+        if(ans<=d_str)
+            cnt++;
+    }
+    printf("%d",cnt);
+    return 0;
+}

@@ -1,0 +1,1 @@
+i,a,d,e;main(n){for(;~scanf("%d",&n);i=!printf("%d\n",n<0?0:a))for(a=d=1,e=2,n=n>18?36-n:n;i<n;e+=i++<8?1:-3,a+=d)d+=e;}

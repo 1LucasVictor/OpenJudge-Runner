@@ -1,0 +1,23 @@
+int main(void)
+{
+	double x1,x2,x3,x4;
+	double y1,y2,y3,y4;
+	double a1,a2;
+	int i,n;
+	
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		scanf("%lf %lf",&x1,&y1);
+		scanf("%lf %lf",&x2,&y2);
+		scanf("%lf %lf",&x3,&y3);
+		scanf("%lf %lf",&x4,&y4);
+		a1 = (y2-y1)/(x2-x1);
+		a2 = (y4-y3)/(x4-x3);
+		if(a1==a2)
+		printf("YES\n");
+		else
+		printf("NO\n");
+	}
+	return 0;
+}

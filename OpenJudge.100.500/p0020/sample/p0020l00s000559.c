@@ -1,0 +1,1 @@
+double a,b,c,d,x;main(s){for(;~scanf("%*d%lf%lf%lf%lf"+!!--s*3,&a,&b,&c,&d);x=s%2?puts(x!=b?"NO":"YES"):b)b-=d,b/=a-c;}

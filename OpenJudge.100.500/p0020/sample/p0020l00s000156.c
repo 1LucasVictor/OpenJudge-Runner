@@ -1,0 +1,1 @@
+float a,b,c,d,t,x;main(s){for(scanf("%*d");~scanf("%f%f%f%f",&a,&b,&c,&d);s++%2?x=t:puts(abs(x-t)>1e-6?"NO":"YES"))t=(b-d)/(a-c);}

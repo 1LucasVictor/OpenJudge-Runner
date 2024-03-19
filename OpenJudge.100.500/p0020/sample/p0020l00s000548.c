@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    double x1, y1, x2, y2, x3, y3, x4, y4, AB, CD;
+    int i, n;
+    scanf("%d", &n);
+    for(i=0;i<n;i++){
+    scanf("%lf %lf %lf %lf %lf %lf %lf %lf", &x1, &y1, &x2, &y2, &x3, &y3, &x4, &y4);
+    AB=(y1-y2)/(x1-x2);
+    CD=(y3-y4)/(x3-x4);
+    if(AB==CD)
+    printf("YES\n");
+    else
+    printf("NO\n");
+    }
+    return 0;
+    } 
+

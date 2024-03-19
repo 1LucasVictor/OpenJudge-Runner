@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(void)
+{
+	char s[9];
+  	int c=0, i;
+  	scanf("%s", &s);
+  	for(i=0; i<3; ++i)c+=s[i]=='1';
+  	printf("%d\n", c);
+  	return 0;
+}

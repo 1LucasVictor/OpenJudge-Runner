@@ -1,0 +1,1 @@
+d;main(n){scanf("%d%d",&d,&n);printf("%d",n);while(d--)printf("00");}

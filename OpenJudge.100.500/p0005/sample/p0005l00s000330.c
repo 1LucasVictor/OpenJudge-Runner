@@ -1,0 +1,1 @@
+main(i){i-11&&main((--i?1:2561)+getchar())*printf(&i);}

@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(void)
+{
+   int i,a,x,y,z;
+   char s[100];
+
+   scanf("%s",s);
+
+   a=strlen(s);
+
+   x=0; y=0; z=0;
+   for(i=0;i<a;i++){
+      if(s[i]=='0')
+        x=x+1;
+      else if(s[i]=='1')
+        y=y+1;
+   }
+
+   if(x>y) z=y*2;
+   else if(y>x) z=x*2;
+   else if(x=y) z=x*2;
+
+   printf("%d\n",z);
+
+   return 0;
+}

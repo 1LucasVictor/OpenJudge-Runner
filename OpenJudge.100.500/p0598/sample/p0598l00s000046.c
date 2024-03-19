@@ -1,0 +1,1 @@
+a,b;main(){scanf("%d%d",&a,&b);printf("%d",b-(1-2*!(b%a))*a);}

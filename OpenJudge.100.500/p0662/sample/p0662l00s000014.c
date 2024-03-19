@@ -1,0 +1,15 @@
+
+#include <stdio.h>
+
+int main()
+{
+  long long int a,b,c,d,max1,max;
+  scanf("%lld %lld %lld %lld",&a,&b,&c,&d);
+   if(b-c>0)
+   {
+       printf("%lld",b-c);
+   }else{
+       printf("0");
+   }
+    return 0;
+}

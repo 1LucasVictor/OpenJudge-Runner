@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+int gcd(int a,int b);
+int compare(const void* a, const void* b);
+
+int main(void){
+    char S[4];
+    scanf("%s",S);
+    if (S[1]=='B'){
+        printf("ARC\n");
+    }else{
+        printf("ABC\n");
+    }
+    return 0;
+}
+int compare(const void* a, const void* b){
+    return strcmp(a, b);
+}
+// 最大公約数
+int gcd(int a,int b){
+    int c;
+    int tmp;
+    if(b > a){  //bがaより大きい場合bとaを入れ替える
+        c = a;
+        a = b;
+        b = c;
+    }
+    tmp = a % b;
+    while(tmp!=0){
+        a = b;
+        b = tmp;
+        tmp = a % b;
+    }
+    return b;
+}

@@ -1,0 +1,79 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <math.h>
+
+//============================================================================
+#define pred(x) ((x)-1)
+#define succ(x) ((x)+1)
+//============================================================================
+//============================================================================
+//============================================================================
+
+//============================================================================
+//============================================================================
+//long weight(unsigned short *ary, long *i, long *max)
+//============================================================================
+/*
+    1<= wi <=10000
+    1<= n <= 100000
+    1<= k <= 100000
+*/
+//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
+void input(FILE *file)
+{
+    long K,N,k,n,max,sum,res,val;
+    unsigned short *ary;
+
+    fscanf(file, "%ld", &N);
+    fscanf(file, "%ld", &K);
+    ary=malloc(N*sizeof(unsigned short));
+    for (n=sum=max=0; n<N; n++){
+        fscanf(file, "%d", &ary[n]);
+        sum+=ary[n];
+        if (max<ary[n])
+            max=ary[n];
+    }
+    if (K==1)
+        max=succ(sum);
+    else{
+        val = sum/K;
+        if (max<val)
+            max=val;
+        for (res=0; res!=sum; max++){
+#ifdef DESKTOP
+            printf("max=%ld:", max);
+#endif
+            for (k=n=res=0; k<K && n<N; k++){
+                for (val=0; val<=max && n<N; n++){
+                    val+=ary[n];
+                }
+                if (max<val){
+                    n--;
+                    val-=ary[n];
+                }
+                res+=val;
+#ifdef DESKTOP
+                printf(" %ld", val);
+#endif
+            }
+#ifdef DESKTOP
+            printf("\n");
+#endif
+            //if (n==N && /*k==K &&*/ val<=max)
+            //    break;
+        }
+    }
+    printf("%ld\n", pred(max));
+    free(ary);
+}
+//============================================================================
+#ifndef DESKTOP
+int main()
+{
+    input(stdin);
+    return 0;
+}
+#endif

@@ -1,0 +1,1 @@
+i;main(c){c&&(i=!putchar(c-1?~c:0x0A,main(~getchar())));}

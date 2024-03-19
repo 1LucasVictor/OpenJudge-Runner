@@ -1,0 +1,1 @@
+main(){char s[4];scanf("%s",s);puts(strcmp(s,"AAA")+strcmp(s,"BBB")?"No":"Yes");}

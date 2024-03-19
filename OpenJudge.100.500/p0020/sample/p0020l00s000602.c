@@ -1,0 +1,1 @@
+float a[];main(i){for(;~scanf("%f",a-i--%8);!i||i%8||puts(fabs((*a-a[2])*(a[5]-a[7])-(a[1]-a[3])*(a[4]-a[6]))<1e-7?"YES":"NO"));}

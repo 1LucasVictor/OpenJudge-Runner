@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(void){
+  int a,b,c;
+  int five=0,seven=0;
+  scanf("%d %d %d",&a,&b,&c);
+  if(a==5){five++;}
+    if(b==5){five++;}
+    if(c==5){five++;}
+    if(a==7){seven++;}
+    if(b==7){seven++;}
+    if(c==7){seven++;}
+  if(five==2&&seven==1){printf("YES\n");}
+  else{printf("NO\n");}
+  return 0;
+}

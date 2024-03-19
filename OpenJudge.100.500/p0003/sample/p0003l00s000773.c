@@ -1,0 +1,1 @@
+main(){float a,b,c,d,e,f,x,y;for(;~scanf("%f%f%f%f%f%f",&a,&b,&c,&d,&e,&f);printf("%.3f %.3f\n",((e*c-f*b==0)?0:(e*c-f*b)/(e*a-b*d)),((a*f-c*d)==0?0:(a*f-c*d)/(a*e-b*d))));}

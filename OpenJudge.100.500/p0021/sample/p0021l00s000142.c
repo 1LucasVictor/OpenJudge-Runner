@@ -1,0 +1,1 @@
+n,m,p;main(c){for(;~scanf("%d",&c);!n?m=p=-5e8,n=c:--n||printf("%d\n",m))m=fmax(p=p>0?c+p:c,m);}

@@ -1,0 +1,1 @@
+main(a){scanf("%d",&a);puts(a<30?"No":"Yes");}

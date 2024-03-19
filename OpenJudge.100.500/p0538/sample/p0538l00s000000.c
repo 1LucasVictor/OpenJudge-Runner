@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(void)
+{
+	int A;
+	int B;
+	scanf("%d %d",&A,&B);
+
+	if(1<=A<=9 && 1<=B<=9){
+		printf("%d",A*B);
+	}
+	else
+	{
+		printf("-1");
+	}
+	
+
+return(0);
+}

@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+typedef unsigned long long ll;
+
+int main(void){
+    ll L, R;
+    ll i, j;
+    ll Lp, Lq, Rp, Rq; 
+
+    scanf("%llu %llu", &L, &R);
+
+    Lp = L/2019;
+    Lq = L%2019;
+    Rp = R/2019;
+    Rq = R%2019;
+
+    if(R - L >= 2019){
+        printf("0");
+        return 0;
+    }else if(Lq > Rq){
+        printf("0");
+        return 0;
+    }else{
+        printf("%llu", (Lq*(Lq+1)));
+        return 0;
+    }
+
+}

@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+  char str[24];
+  int i;
+
+  scanf("%s", str);
+
+  for (i = strlen(str); i > 0; i--){
+    printf("%c", str[i-1]);
+  }
+  printf("\n");
+
+  return 0;
+
+}

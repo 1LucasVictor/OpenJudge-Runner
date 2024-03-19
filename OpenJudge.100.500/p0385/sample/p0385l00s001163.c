@@ -1,0 +1,21 @@
+#include <stdio.h>
+ 
+int main()
+{
+ 
+  int num,a;
+while(1){
+  int sum = 0;
+ 
+  scanf("%d", &num);
+ if(num==0)break;
+  while(num>0){
+    a = num % 10;
+    sum = sum + a;
+    num = num / 10;
+  }
+ 
+  printf("%d\n", sum);
+    }
+  return 0;
+}

@@ -1,0 +1,1 @@
+a;main(b){scanf("%d%d",&a,&b);puts(a*b&1?"Odd":"Even");}

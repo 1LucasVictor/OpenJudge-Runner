@@ -1,0 +1,1 @@
+c(int*a,int*b){return*a-*b;}*b,a[3];main(){b=a;for(;~scanf("%d",b);b++);qsort(b-3,3,4,c);printf("%d %d %d\n",a[0],a[1],a[2]);return 0;}

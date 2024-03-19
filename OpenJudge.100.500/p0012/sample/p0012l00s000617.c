@@ -1,0 +1,1 @@
+i,t[99];main(w){for(;~scanf("%d",&w);)if(!w)printf("%d\n",t[--i]);else t[i++]=w;exit(0);}

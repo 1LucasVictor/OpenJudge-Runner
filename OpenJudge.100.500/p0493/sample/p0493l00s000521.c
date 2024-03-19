@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+	int X;
+	scanf("%d", &X);
+	printf("%d\n", X / 500 * 1000 + X % 500 / 5 * 5);
+	fflush(stdout);
+	return 0;
+}

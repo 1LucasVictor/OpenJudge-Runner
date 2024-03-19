@@ -1,0 +1,1 @@
+i,n,t;main(m){for(;scanf("%d",&n),n;printf("%d\n",m))for(t=0,m*=-1;n--&&scanf("%d",&i);(t+=i)>m?m=t:(t<0)&&(t=0));}

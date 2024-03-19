@@ -1,0 +1,1 @@
+n,k,i,f;main(){while(~scanf("%d",&n)){for(f=i=0;k=n-i/100-(i/10)%10-i%10,i<1000;++i)if(k<10&&k>=0)f++;printf("%d\n",f);}}

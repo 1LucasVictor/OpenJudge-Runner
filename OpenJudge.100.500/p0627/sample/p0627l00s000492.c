@@ -1,0 +1,1 @@
+a;main(b){scanf("%d%d",&a,&b);printf("%g",fmax(a+b,fmax(a-b,a*b)));}

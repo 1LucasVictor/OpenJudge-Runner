@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(void)
+{
+	int n, l;
+	
+	scanf("%d", &n);
+	
+	printf("%d", (n / 2) + (n % 2));
+	
+	return 0;
+}

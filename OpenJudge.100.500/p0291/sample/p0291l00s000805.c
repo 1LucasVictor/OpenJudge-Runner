@@ -1,0 +1,27 @@
+#include<stdio.h>
+#define N 200000 
+
+int main(void){
+int Rt[N], RMAX = -N * N, R = - N * N;
+int n, s;
+int i, j;
+
+scanf("%d",&n);
+for(i = 0; i < n; i++){
+scanf("%d", &s);
+Rt[i] = s;
+}
+
+for( i = 0; i < n; i++){
+for( j = i + 1; j < n; j++){
+R =Rt[j] - Rt[i];
+if( R > RMAX) RMAX = R;
+
+}
+}
+printf("%d\n", RMAX);
+
+
+
+return 0;
+}

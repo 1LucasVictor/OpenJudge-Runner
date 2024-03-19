@@ -1,0 +1,29 @@
+#include<stdio.h>
+int isprime(int n){
+	int i;
+	for(i=2;i*i <= n;i++){
+		if(n%i==0)return 0;
+	}
+	return 1;
+}
+int main(){
+	//int sosu[1000]={0};
+	int sum[1001]={0};
+	int i, n;
+	sum[0]=0;
+	while(scanf("%d",&n) != EOF){
+		for(i=2;i<=n;i++){
+			if(isprime(i)){//i????´???°??????
+				sum[i+1]=sum[i]+1;
+//printf("%d????´???°??§???\n",i);
+//printf("????¨?%d\n",sum[i+1]);
+			}else{
+				sum[i+1]=sum[i];
+//printf("%d????´???°???????????????\n",i);
+//printf("????¨?%d\n",sum[i+1]);
+			}
+		}
+		printf("%d\n",sum[n+1]);
+	}
+	return 0;
+}

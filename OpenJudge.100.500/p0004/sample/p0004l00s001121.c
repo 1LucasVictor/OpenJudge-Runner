@@ -1,0 +1,1 @@
+a,b;G(v,w){w?G(w,v%w):printf("%d %d\n",v,a/v*b);}main(){for(;~scanf("%d%d",&a,&b);)G(a,b);}

@@ -1,0 +1,1 @@
+j;main(c){j=c!=10?main(getchar()),c>10?putchar(c):0:0;}

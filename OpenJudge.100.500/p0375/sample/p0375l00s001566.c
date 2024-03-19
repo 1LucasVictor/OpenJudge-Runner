@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+int main(void)
+{
+    int n, i, x;
+    
+    scanf("%d", &n);
+    
+    for(i=3; i<=n; i++){
+        x=i;
+        if(x%3==0){
+            printf(" %d", i);
+        }else{
+            do{
+                if(x%10==3){
+                    printf(" %d", i);
+                    break;
+                }
+                x/=10; 
+            }while(x!=0);
+        }
+    }
+    
+    putchar('\n');
+    
+    return 0;
+}

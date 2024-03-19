@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+#include<stdlib.h>
+#include<ctype.h>
+
+//qsort
+int compare_int(const void *a, const void *b)
+{
+    return *(int*)a - *(int*)b;
+}
+
+//比較
+int max(int a, int b){
+	if (a>b) return a;
+	else return b;
+}
+
+int min(int a,int b) {
+	if(a>b) return b;
+	else return a;
+}
+
+
+//main関数
+int main() {
+	long long A;
+	float B;
+	scanf("%lld %f",&A,&B);
+	long long sakoda = B*100;
+	long long answer = A*sakoda;
+	printf("%lld",answer / 100);
+	 
+}

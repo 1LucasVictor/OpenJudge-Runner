@@ -1,0 +1,1 @@
+a,v[9];main(b){for(;~scanf("%d%d",&a,&b);a=!printf("%d\n",sprintf(v,"%d",a+b)));}

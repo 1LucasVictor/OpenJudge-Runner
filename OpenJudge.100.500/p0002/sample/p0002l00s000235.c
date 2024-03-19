@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(void)
+{
+   
+    int i,N,a,b,c;
+    scanf("%d",&N);
+    for(i=0; i<N; i++){
+    scanf("%d %d %d",&a,&b,&c);
+    if(a*a==b*b+c*c || b*b==a*a+c*c || c*c==a*a+b*b)
+        printf("YES\n");
+    
+    else
+        printf("NO\n");
+    }    
+    return 0;
+    
+}

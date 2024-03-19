@@ -1,0 +1,1 @@
+n,*a=&n;main(){for(;~scanf("%s",a);)*a%48?a++:puts(--a);}

@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void){
+  int L,R,min = 2018,l,r;
+  scanf("%d %d",&L,&R);
+  l = L%2019;
+  r = R-L+l;
+  if(R-L>=2019){printf("%d",0);return 0;}
+  for(int i = l;i <= r;i++){
+	  for(int j = i + 1;j <= r;j++){
+        if(min > (i*j)%2019)min=(i*j)%2019;
+	  }  
+  }
+  printf("%d",min);  
+  return 0;
+}

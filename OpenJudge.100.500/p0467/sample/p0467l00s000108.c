@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(void)
+{
+  int A, B, C, K;
+
+  scanf("%d %d %d %d", &A, &B, &C, &K);
+  if(A>=K) printf("%d\n", K);
+  else{
+    K=K-A;
+    if(B>=K)
+      printf("%d\n", A);
+    else
+      printf("%d\n", A+C*(K-A-B));
+  }
+    return 0;
+}

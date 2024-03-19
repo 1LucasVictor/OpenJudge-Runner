@@ -1,0 +1,11 @@
+a,b,k,i=101;
+main()
+{
+	scanf("%d%d%d",&a,&b,&k);
+	while(k)
+	{
+		i--;
+		k-=a%i==0&&b%i==0;
+	}
+	printf("%d",i);
+}

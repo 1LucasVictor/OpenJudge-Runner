@@ -1,0 +1,109 @@
+/* 
+* Binary Tree
+* output 1)node_number, 2)parent_number, 3)depth, 4)kind_of_node, 5)child_list
+*/
+
+/* inclution */
+#include <stdio.h>
+
+/* Definition */
+#define MAX 100000
+#define NIL -1
+
+
+/* Prototype */
+void preOrder(int);
+void inOrder(int);
+void postOrder(int);
+
+/* Global Variables */
+struct node {
+  int parent, left, right;
+};
+typedef struct node Node;
+
+Node T[MAX]; //array for tree
+int n; //number of tree array
+
+/* main */
+int main(){
+  int i,j,key,left,right,root=0;
+  
+  /* input the number of A[] */
+  scanf("%d",&n);
+  
+  /* initialize array */
+  for(i=0;i<n;i++) { //??¨??????NIL??§?????????
+    T[i].parent = NIL;
+    T[i].left = NIL;
+    T[i].right = NIL;
+  }
+  
+  /* input datas */
+  for(i=0;i<n;i++){
+    scanf("%d", &key);
+    scanf("%d%d",&left, &right);
+    //??????????´?
+    T[key].left = left;
+    T[key].right = right;
+
+    //???????????¨????????????????????????????¨????
+    if(left != NIL) {
+      T[left].parent = key;
+    }
+    if(right != NIL) {
+      T[right].parent = key;
+    }
+  }
+
+  /* printing */
+  printf("Preorder\n");
+  preOrder(root);
+  printf("\n");
+  printf("Inorder\n");
+  inOrder(root);
+  printf("\n");
+  printf("Postorder\n");
+  postOrder(root);
+  printf("\n");
+
+  return 0;
+}
+
+
+/*????????????*/
+void preOrder(int u){ 
+  if (u != NIL) {
+    //????????????
+    printf(" ");
+    printf("%d",u);
+    //???
+    preOrder(T[u].left);
+    //???
+    preOrder(T[u].right);
+  }
+}
+
+/*????????????*/
+void inOrder(int u){
+  if(u != NIL){
+    //???????????¨?????¨
+    inOrder(T[u].left);
+    printf(" ");
+    //???????????¨?????????(?????????)
+    printf("%d",u);
+    //?????¨?????¨
+    inOrder(T[u].right);
+  }
+}
+
+
+/*????????????*/
+void postOrder(int u){
+  if (u != NIL) {
+    postOrder(T[u].left);
+    postOrder(T[u].right);
+    printf(" ");
+    printf("%d",u);
+  }
+}

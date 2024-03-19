@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int n, a, b;
+    scanf("%d %d %d\n", &n, &a, &b);
+    
+    if ((n * a) < b) printf("%d", n * a);
+    else printf("%d", b);
+    
+    return 0;
+}

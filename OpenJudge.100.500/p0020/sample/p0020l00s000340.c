@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main(void)
+{
+  int n;
+  double x[4],y[4];
+  int i,j;
+  double slope1,slope2;
+
+  scanf("%d",&n);
+
+  for(i=0; i<n; i++)
+    {
+      for(j=0; j<4; j++){
+	scanf("%lf %lf",&x[j],&y[j]);
+      }
+      if((y[1]-y[0]) != 0){
+	slope1 = (x[1]-x[0])/(y[1]-y[0]);
+      }else{
+	slope1 = 0;
+      }
+      if((y[3] - y[2]) != 0){
+	slope2 = (x[3]-x[2])/(y[3]-y[2]);
+      }else{
+         slope2 = 0;
+      }
+
+	if(slope1 == slope2){
+	  printf("YES\n");
+	}
+	else{
+	  printf("NO\n");
+	}
+    }
+  return 0;
+}

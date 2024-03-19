@@ -1,0 +1,1 @@
+d=100;main(n){for(scanf("%d",&n);n--;d=d*1.05+.99);d=!printf("%.f\n",d*1e3);}

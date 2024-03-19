@@ -1,0 +1,1 @@
+float b,c,d,e,f;main(a){for(;~scanf("%d%f%f%f%f%f",&a,&b,&c,&d,&e,&f);printf("%.3f %.3f\n",(c-b*d)/a,d))d=(a*f-c*d)/(a*e-b*d);}

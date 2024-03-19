@@ -1,0 +1,1 @@
+main(c){c-10&&main(getchar());c=!(c>11&&putchar(c));}

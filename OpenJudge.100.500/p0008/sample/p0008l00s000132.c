@@ -1,0 +1,46 @@
+#include<stdio.h>
+
+int IsPrime(int n) {
+	int i;
+
+	for (i = 3; i <= n / i; i += 2)
+		if (n % i == 0)
+			return 0;
+	return 1;
+}
+
+int main(void)
+{
+	int n[30];
+	int i,j,a=0;
+	int count = 0;
+
+	while(scanf("%d",&n[a]) != EOF && a < 30)
+		if ((1 <= n[a]) && (n[a] <= 999999)) {
+			a++;
+		}
+
+	for (i = 0; i < a; i++) {
+		count = 0;
+	
+			for (j = 0; j < n[i]; j++) {
+				switch (n[i]-j) {
+				case 1:
+					break;
+				case 2:
+					count++;
+					break;
+				case 3:
+					break;
+				}
+				
+				if ((n[i] - j) % 2 != 0 && (n[i]-j) % 3 != 0) {
+					if (IsPrime(n[i] - j)) {
+						count++;
+				}
+			}
+		}
+		printf("%d\n",count);
+	}
+	return 0;
+}

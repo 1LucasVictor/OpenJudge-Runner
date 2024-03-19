@@ -1,0 +1,1 @@
+j,a['   '],s;main(i){for(;++i<1e6||~scanf(s="%d\n",&j)&&printf(s,a[j]);a[i]=s+=!a[i])if(!a[j=i])for(;j<1e6;a[j+=i]=1);}

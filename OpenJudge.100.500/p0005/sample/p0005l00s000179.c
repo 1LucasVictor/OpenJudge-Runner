@@ -1,0 +1,1 @@
+main(c){(c=getchar())-10?main(),putchar(c):1;}

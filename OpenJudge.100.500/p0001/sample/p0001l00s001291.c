@@ -1,0 +1,1 @@
+a;main(b){for(;~scanf("%d%d",&a,&b)*a;printf("%.0f\n",a+b?log10(a+b)+1:1));}

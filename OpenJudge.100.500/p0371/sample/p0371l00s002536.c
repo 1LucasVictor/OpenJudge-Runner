@@ -1,0 +1,44 @@
+// max.cpp : ??????????????? ??¢????????±????????§????????¨????????? ?????????????????????????????????
+//
+
+#include "stdio.h"
+
+
+int main()
+{
+    int n, a[100], j, x, c, i, mini, d,sum;
+    scanf("%d", &n);
+
+    c = 0;
+    for (i = 0; i <= n - 1; i++)
+        scanf("%d", &a[i]);
+
+    i = 0;
+
+    for (i = 0; i <= n - 1; i++) {
+        mini = i;
+        for (j = i; j <= n - 1; j++) {
+            if (a[j] < a[mini]) {
+                mini = j;
+                d = 1;
+            }
+        }
+        if (d == 1) {
+            x = a[i];
+            a[i] = a[mini];
+            a[mini] = x;
+            c++;
+        }
+        d = 0;
+    }
+    i = 0;
+    sum = 0;
+    for (i = 0; i <= n - 1; i++) {
+        sum = sum + a[i];
+    }
+
+    printf("%d", a[0]);
+    printf(" %d", a[n-1]);
+    printf(" %d\n", sum);
+    return 0;
+}

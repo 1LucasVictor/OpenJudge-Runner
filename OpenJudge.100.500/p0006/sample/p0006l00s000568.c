@@ -1,0 +1,1 @@
+main(){int n,a=100000,i=0;scanf("%d",&n);for(;i<n;i++){a*=1.05;if(a%1000!=0)a+=1000;a/=1000;a*=1000;}printf("%d\n",a);return 0;}

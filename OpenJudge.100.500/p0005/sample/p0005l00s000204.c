@@ -1,0 +1,1 @@
+char b[99];main(n){for(n=read(0,b,80);n--;)putchar(b[n]);}

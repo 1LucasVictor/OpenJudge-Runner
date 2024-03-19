@@ -1,0 +1,1 @@
+main(a){for(;~scanf("%d",&a);a=a<19?1+a:37-a,printf("%d\n",(a*a+3*a+2)*a/6));return 0;}

@@ -1,0 +1,1 @@
+main(c){c=getchar();c^10&&main(c)*putchar(c);}

@@ -1,0 +1,1 @@
+n,a,b,c;main(){scanf("%d",&n);while(n-->0){scanf("%d %d %d",&a,&b,&c);a*=a;b*=b;c*=c;(a+b==c || a+c==b || b+c==a)?printf("YES\n"):printf("NO\n");}exit(0);}

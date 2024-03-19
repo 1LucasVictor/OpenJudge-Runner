@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main(){
+    char s[4];
+
+    scanf("%s",s);
+
+    if(s[0]==s[1]){
+        printf("Bad\n");
+    }else if(s[2]==s[1]){
+        printf("Bad\n");
+    }else if(s[2]==s[3]){
+        printf("Bad\n");
+    }else{
+        printf("Good\n");
+    }
+
+    return 0;
+}

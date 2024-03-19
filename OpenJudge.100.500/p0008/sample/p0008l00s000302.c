@@ -1,0 +1,1 @@
+j,a['   '],z=1e6;main(i){for(;++i<z||~scanf(j="%d\n",a)&&printf(j,a[*a]);a[i]=*a+=!a[i])for(j=i*i;i<998&&!a[i]?a[j]=j<z:0;j+=i);}

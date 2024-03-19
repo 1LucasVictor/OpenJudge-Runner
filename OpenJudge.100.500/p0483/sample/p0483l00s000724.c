@@ -1,0 +1,1 @@
+main(){char s[3];scanf("%s",s);puts(s[0]-'7'&&s[1]-'7'&&s[2]-'7'?"No":"Yes");}

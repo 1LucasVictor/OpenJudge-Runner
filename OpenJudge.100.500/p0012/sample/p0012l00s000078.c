@@ -1,0 +1,1 @@
+t;main(n){t=~scanf("%d",&n)?!n?:main(printf("%d\n",n,main(0))):0;}

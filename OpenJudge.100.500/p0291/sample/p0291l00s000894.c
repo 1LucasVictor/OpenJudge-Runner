@@ -1,0 +1,15 @@
+#include <stdio.h>
+#define N 20000
+int main(){
+  int i,minv=0,R[N],j,n,maxv=0;
+  scanf("%d",&n);
+  for(i=0;i<n;i++) scanf("%d",&R[i]);
+  minv=R[0];
+  maxv=R[1]-R[0];
+  for(j=1;j<n;j++){
+    if(maxv<R[j]-minv) maxv=R[j]-minv;
+    if(minv>R[j]) minv=R[j];
+  }
+  printf("%d\n",maxv);
+  return 0;
+}

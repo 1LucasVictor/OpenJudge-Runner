@@ -1,0 +1,1 @@
+d;main(n){scanf("%d%d",&d,&n);printf("%d",(int)pow(100,d)*(n+(n==100)));}

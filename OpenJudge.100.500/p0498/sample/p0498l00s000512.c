@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main(){
+  int a=0;
+  scanf("%d\n",&a);
+  printf("%d\n",a/2+a%2);
+}

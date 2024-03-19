@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int i,j,k,n,cnt=0;
+	
+	while(scanf("%d",&n)!=EOF){
+				
+		//???????´???°
+		if(n>1) cnt++;
+
+		for(i=3;i<=n;i+=2)
+		{
+			k=0;
+			for(j=3;j*j<=i;j+=2)
+			{
+				if(i%2==0||i%j==0)
+				{
+					k=1;
+					break;
+				}
+			}
+
+			if(k==0) cnt++;
+		}
+
+		printf("%d\n", cnt);
+		cnt=0;
+	}
+		
+	return 0;
+}

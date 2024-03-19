@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+  int a,b, result;
+  char op;
+  while(1) {
+    scanf("%d %c %d", &a, &op, &b);
+    if(op=='?')break;
+    if(op=='+')result=a+b;
+    if(op=='-')result=a-b;
+    if(op=='*')result=a*b;
+    if(op=='/')result=a/b;
+    printf("%d\n", result);
+  }
+  return 0;
+}
+

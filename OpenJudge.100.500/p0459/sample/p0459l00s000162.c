@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void){
+	int X, Y;
+	scanf("%d %d", &X, &Y);
+	if (Y % 2 == 0||Y % 4 == 0||Y % 6 == 0){
+      	if (Y - (6 *X) < 0)
+			printf("Yes\n");
+      	else {
+          printf("No\n");
+        }
+	}
+	else {
+		printf("No\n");
+	}
+	return 0;
+}

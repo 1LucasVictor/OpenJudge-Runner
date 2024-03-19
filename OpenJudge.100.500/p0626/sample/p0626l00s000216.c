@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int d,n,x;
+    scanf("%d %d",&d,&n);
+    if(n==100)
+        printf("\n");
+    else if(d==0)
+    {
+        printf("%d\n",n);
+    }
+    else if(d==1)
+    {
+        printf("%d\n",n*100);
+    }
+
+    else if(d==2)
+    {
+        printf("%d\n",n*10000);
+    }
+    return 0;
+}

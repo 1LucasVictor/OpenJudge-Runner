@@ -1,0 +1,11 @@
+b;
+main(a){
+  for(;~scanf("%d%d",&a,&b);)
+    {
+      a+=b;
+      for(b=0;a>0;b++)
+	a/=10;
+      printf("%d\n",b);
+    }
+  exit(0);
+}

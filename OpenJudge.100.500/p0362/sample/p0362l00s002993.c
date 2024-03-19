@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void){
+
+  int x,y,z;
+
+  printf("");
+  scanf("%d %d %d",&x,&y,&z);
+
+  if (x < y < z){
+
+    printf("Yes\n");
+      
+      } else {
+
+    printf("No\n");
+
+      }
+
+  return 0;
+}
+
+    

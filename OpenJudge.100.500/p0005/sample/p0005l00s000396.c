@@ -1,0 +1,1 @@
+main(i){i-10?main(getchar()),i=!putchar(i<2?10:i):0;}

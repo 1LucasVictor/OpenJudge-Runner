@@ -1,0 +1,1 @@
+x=1000,a=100000,i;main(n){scanf("%d",&n);for(;i++<n;a/=x,a*=x){a*=1.05;if(a%x)a+=x;}printf("%d\n",a);exit(0);}

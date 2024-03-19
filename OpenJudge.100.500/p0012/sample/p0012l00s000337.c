@@ -1,0 +1,1 @@
+x[9];main(n){for(;~scanf("%d",x+n);x[n]?++n:printf("%d\n",x[--n]));}

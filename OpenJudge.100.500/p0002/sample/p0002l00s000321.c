@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int n, a, b, c, w;
+	int i;
+
+	scanf("%d", &n);
+	for (i = 0; i < n; i++) {
+		scanf("%d%d%d", &a, &b, &c);
+		if (a < b) {
+			w = a; a = b; b = w;
+		}
+		if (a < c) {
+			w = a; a = c; c = w;
+		}
+		if (a * a == b * b + c * c)
+			puts("YES");
+		else
+			puts("NO");
+	}
+	return 0;	
+}

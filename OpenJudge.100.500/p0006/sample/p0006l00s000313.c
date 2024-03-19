@@ -1,0 +1,1 @@
+d=1e5;main(n){for(scanf("%d",&n);n--;)d=(d+d/20+999)/1000*1000;exit(!printf("%d\n",d));}

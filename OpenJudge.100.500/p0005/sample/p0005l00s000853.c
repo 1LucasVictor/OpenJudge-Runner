@@ -1,0 +1,1 @@
+main(i){return i-10&&(i=i-1?i:10,main(getchar())*putchar(i));}

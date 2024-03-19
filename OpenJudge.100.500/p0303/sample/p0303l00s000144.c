@@ -1,0 +1,51 @@
+
+#include <stdio.h>
+
+int main(){
+
+    long n, k;
+    long w[100001];
+    long wc, wt;
+    long min, max;
+    long p;
+    long i;
+
+    scanf( "%ld%ld", &n, &k);
+
+    for( i=0L; i<n; i++ ){
+        scanf( "%ld", &w[i] );
+        if( min < w[i] ) min = w[i];
+        max += w[i];
+    }
+
+
+
+    min=0L; wc = 1L; 
+    while( min < max ){
+
+        p = min + ( max - min )/2L;
+
+        // in: p, out; wc
+        wt = 0L; wc = 0L; 
+        for( i=0; i<n; i++ ){
+            wt += w[i];
+            
+            if( wt > p ){ 
+                wt = w[i];
+                wc++;
+            }else if( wt == p){
+                wt = 0L;
+                wc++;
+            }
+        }
+        if( wt > 0 ) wc++;
+        
+        if( k < wc ) min = p + 1L;
+        if( k >= wc ) max = p;
+    }
+    
+
+    printf( "%ld\n", min );
+    return 0;
+}
+

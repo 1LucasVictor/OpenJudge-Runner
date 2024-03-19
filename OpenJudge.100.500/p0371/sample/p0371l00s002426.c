@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int n,i,a,min,max;
+	long sum;
+
+	scanf("%d %d",&n,&min);
+	max=min;
+	sum=min;
+	for(i=1;i<n;i++){
+		scanf("%d",&a);
+		if(min>a){
+			min=a;
+		}
+		if(max<a){
+			max=a;
+		}
+		sum+=a;
+	}
+	printf("%d %d %ld\n",min,max,sum);
+
+	return 0;
+}

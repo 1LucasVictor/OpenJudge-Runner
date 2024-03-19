@@ -1,0 +1,1 @@
+main(){system("tr BR RB");}

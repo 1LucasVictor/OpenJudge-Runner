@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(int argc, const char * argv[])
+
+{
+    int count,max=-1000,i,j;
+    int x[200000];
+    for(i=0;i<200000;i++){
+       x[i]=0;
+    }
+    scanf("%d",&count);
+    for(i=0;i<count;i++){
+       scanf("%d",&x[i]);
+    }
+    for(i=1;i<count;i++){
+       for(j=i-1;j>=0;j--){
+          if(x[i]-x[j]>max){
+              max=x[i]-x[j];
+          }
+       }
+    }
+    printf("%d\n",max);
+    return 0;
+}

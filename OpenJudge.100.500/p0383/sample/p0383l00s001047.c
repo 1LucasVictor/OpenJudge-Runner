@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main(void){
+  int n,m,l,i,j,k,sum;
+  int a[100][100]={0};
+  int b[100][100]={0};
+  int c[100][100]={0};
+
+  scanf("%d %d %d",&n,&m,&l);
+
+  //配列に読み込み
+  for(i=0;i<n;i++){
+    for(j=0;j<m;j++){
+      scanf("%d",&a[i][j]);
+    }
+  }
+
+  for(i=0;i<m;i++){
+    for(j=0;j<l;j++){
+      scanf("%d",&b[i][j]);
+    }
+  }
+
+  //計算して配列cに書き込み
+  for(i=0;i<3;i++){
+    for(j=0;j<3;j++){
+      for(k=0;k<2;k++){
+	c[i][j]+=a[i][k]*b[k][j];
+      }
+    }
+  }
+
+  //配列cを表示
+  for(i=0;i<n;i++){
+    for(j=0;j<l;j++){
+      printf("%d",c[i][j]);
+      if(j<l-1){
+	printf(" ");
+      }
+    }
+    printf("\n");
+  }
+
+  return 0;
+}

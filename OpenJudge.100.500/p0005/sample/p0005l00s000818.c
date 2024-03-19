@@ -1,0 +1,1 @@
+k;main(i){i-10&&main(getchar())&(k/=putchar(i-1?i:10));}

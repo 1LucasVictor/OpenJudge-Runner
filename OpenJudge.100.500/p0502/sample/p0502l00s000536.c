@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main ()
+{
+    int n,i,flag;
+    scanf("%d",&n);
+    int arr[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        if (arr[i]%2==0)
+        {
+            if(arr[i]%3==0 || arr [i]%5==0)
+            {
+                flag=0;
+            }
+            else
+            {
+                flag=1;
+                break;
+            }
+        }
+    }
+    if (flag==0)
+    printf("APPROVED\n");
+    else if (flag==1)
+    printf("DENIED\n");
+    return 0;
+}

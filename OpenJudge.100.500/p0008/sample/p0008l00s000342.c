@@ -1,0 +1,1 @@
+long long i,j;a[1000000],s;main(){for(i=2;i<1e6;i++){if(!a[i])for(j=i*i;j<1e6;j+=i)a[j]=1;a[i]=s+=!a[i];}for(;~scanf("%d",&i);printf("%d\n",a[i]));}

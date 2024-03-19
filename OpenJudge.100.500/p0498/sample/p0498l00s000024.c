@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(void) {
+	int n, i;
+	scanf("%d", &n);
+
+	if (n % 2)
+		printf("%d", n / 2 + 1);
+
+	else
+		printf("%d", n / 2);
+
+	return 0;
+}

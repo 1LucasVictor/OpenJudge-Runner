@@ -1,0 +1,1 @@
+a,b;main(x){scanf("%d%d%d",&a,&b,&x);puts((a>x||x>a+b)?"NO":"YES");}

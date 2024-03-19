@@ -1,0 +1,1 @@
+P[1000000];m,c,i;main(n){for(;~scanf("%d",&n);printf("%d\n",c))for(memset(P,c=0,m=4e6),m=1;m++<n;)for(c+=!P[m],i=m;i<=n;i+=m)P[i]=1;}

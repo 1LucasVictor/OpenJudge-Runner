@@ -1,0 +1,1 @@
+i,s[60],n,f,g;main(){while(~scanf("%d",s+n++));for(n--;i<n;printf("%d\n",f),i++,f=0){for(int a=0;a<10;a++){for(int b=0;b<10;b++){for(int c=0;c<10;g=s[i]-a-b-c++,g>-1&&g<10?f++:0);}}}exit(0);}

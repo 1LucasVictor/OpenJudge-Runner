@@ -1,0 +1,3 @@
+#include <stdio.h>
+
+int main(void){    int x;    int y;    int z;    scanf("%d",&x);    scanf("%d",&y);    scanf("%d",&z);      if(x < y && y < z){         printf("%d  %d  %d\n",x,y,z);}      if(x < z && z < y){         printf("%d %d %d\n",x,z,y);}      if(y < x && x < z){         printf("%d %d %d \n",y,z,x);}      if(y < z && z < x){         printf("%d %d %d\n",y,z,x);}      if(z < x && x< y){         printf("%d %d %d\n",z,x,y);}      if(z < y && y < x){         printf("%d %d %d\n",z,y,x);}      return 0; }

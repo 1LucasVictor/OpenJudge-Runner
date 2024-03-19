@@ -1,0 +1,1 @@
+n,m,p;main(c){for(;~scanf("%d",&c);!n?m=p=-5e8,n=c:(c+=p>0?p:0,p=c>m?m=c:c,--n||printf("%d\n",m)));}

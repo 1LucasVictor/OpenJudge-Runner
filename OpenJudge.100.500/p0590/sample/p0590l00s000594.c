@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int a, b, c, d, e, k;
+	scanf("%d", &a);
+	scanf("%d", &b);
+	scanf("%d", &c);
+	scanf("%d", &d);
+	scanf("%d", &e);
+	scanf("%d", &k);
+
+	if (abs(a - b) <= k && abs(b - c) <= k && abs(c - d) <= k && abs(d - e) <= k)
+	{
+		printf("Yay!");
+	}
+	else
+	{
+		printf(":(");
+	}
+	return 0;
+}

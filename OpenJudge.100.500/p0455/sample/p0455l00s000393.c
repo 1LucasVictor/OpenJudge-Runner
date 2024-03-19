@@ -1,0 +1,1 @@
+main(i){scanf("%d",&i);printf("%d",i+i*i+i*i*i);}

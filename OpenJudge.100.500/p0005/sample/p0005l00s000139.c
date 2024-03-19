@@ -1,0 +1,1 @@
+char b[90],*p=b+30;main(i){i=~i?main(*p--=getchar()):!puts(p+3);}

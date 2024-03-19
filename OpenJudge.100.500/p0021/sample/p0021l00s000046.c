@@ -1,0 +1,1 @@
+i,v,s[5000],m,*p;main(n){for(;~scanf("%d",&n);n&&printf("%d\n",m))for(memset(s,i=0,m=2e4),m=-1e5;i++<n;)for(scanf("%d",&v),p=s+i;p---s;m=*p>m?*p:m)*p+=v;}

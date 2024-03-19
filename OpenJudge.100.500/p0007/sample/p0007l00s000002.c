@@ -1,0 +1,1 @@
+a,m;main(n){for(;~scanf("%d",&n);printf("%d\n",m))for(m=a=1e4;a--;)m-=a%10+a/10%10+a/100%10+a/1000!=n;}

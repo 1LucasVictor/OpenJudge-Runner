@@ -1,0 +1,1 @@
+main(){long double a,b,c,d,w,x,y,z;int i;scanf("%d",&i);while(i>0){scanf("%Lf %Lf %Lf %Lf %Lf %Lf %Lf %Lf",&a,&w,&b,&x,&c,&y,&d,&z);(((a-b)/(w-x))==((c-d)/(y-z)))?printf("YES\n"):printf("NO\n");i--;}return 0;}

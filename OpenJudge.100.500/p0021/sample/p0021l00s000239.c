@@ -1,0 +1,1 @@
+main(n){while(scanf("%d",&n),n){int m=-1e9,d=0,t;while(n--)scanf("%d",&t),d=t+(d>0?d:0),m=m>d?m:d;printf("%d\n",m);}exit(0);}

@@ -1,0 +1,43 @@
+#include<stdio.h>
+typedef long long ll;
+
+int main(void)
+{
+  ll n,m,k;
+  ll a[200010],b[200010];
+  scanf("%lld %lld %lld",&n,&m,&k);
+  for(ll i=0;i<n;i++){
+    scanf("%lld",&a[i]);
+  }
+
+  for(ll i=0;i<m;i++){
+    scanf("%lld",&b[i]);
+  }
+
+
+  ll sum_a[200010];
+  ll sum_b[200010];
+  sum_a[0]=a[0];
+  for(int i=1;i<n;i++){
+    sum_a[i]=sum_a[i-1]+a[i];
+  }
+
+  sum_b[0]=b[0];
+  for(int i=1;i<m;i++){
+    sum_b[i]=sum_b[i-1]+b[i];
+  }
+
+
+  ll max=0,result=0;
+  for(ll i=0;i<n;i++){
+    for(ll j=0;j<m;j++){
+      if(sum_a[i]+sum_b[j]>max&&sum_a[i]+sum_b[j]<=k){
+        max=sum_a[i]+sum_b[j];
+        result=(i+1)+(j+1);
+      }
+    }
+  }
+
+  printf("%lld\n",result);
+  return 0;
+}

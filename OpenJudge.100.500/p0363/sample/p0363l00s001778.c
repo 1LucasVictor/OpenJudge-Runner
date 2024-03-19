@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(void){
+  int a,b,c,h=0;
+  scanf("%d %d %d",&a,&b,&c);
+  if(a>b){
+   h=a;
+   a=b;
+   b=h;
+  }if(a>c){
+   h=a;
+   a=c;
+   c=h;
+  }if(b>c){
+   h=b;
+   b=c;
+   c=h;
+  }
+  printf("%d %d %d\n",a,b,c);
+  return 0;
+}
+

@@ -1,0 +1,1 @@
+f(a,b,c){return c?f(a-b,9,c-1)+(b?f(a,b-1,c):0):!a;}main(n){for(;~scanf("%d",&n);printf("%d\n",f(n,9,4)));}

@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main(void){
+    char tmp[1000];
+    fgets(tmp,sizeof(tmp),stdin);
+    int num[3];
+    //???????????????
+    num[0]=atoi(strtok(tmp," "));
+    num[1]=atoi(strtok(NULL," "));
+    num[2]=atoi(strtok(NULL," "));
+
+    //????????????
+    for(int i=0;i<3;i++){
+        for(int j=i+1;j<3;j++){
+            if(num[i]>num[j]){
+                int tmp=num[i];
+                num[i]=num[j];
+                num[j]=tmp;
+            }   
+        }
+    }
+    for(int i=0;i<3;i++){
+        //????????\??????????§????????????????????????????
+        if (i<2){
+            printf("%d ",num[i]);
+        }else{
+            printf("%d\n",num[i]);
+        }
+    }
+
+return 0;
+}

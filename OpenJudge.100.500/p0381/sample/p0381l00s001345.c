@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+    int i, j, k, n, c, x;
+	
+	scanf("%d %d", &n, &x);
+	while(!(n == 0 && x == 0)){
+		c = 0;
+    	for(i = 1; i <= n - 2; i++){
+	    	for(j = i + 1; j <= n - 1; j++){
+		    	for(k = j + 1; k <= n; k++){
+					if(x == i + j + k){
+						c++;
+					}
+		       	}   
+		    }
+	   	}
+		printf("%d\n", c);
+		scanf("%d %d", &n, &x);
+	}
+	
+	return 0;
+}

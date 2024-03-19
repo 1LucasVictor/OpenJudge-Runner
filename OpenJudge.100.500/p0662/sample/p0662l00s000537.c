@@ -1,0 +1,1 @@
+a,b,c,d;main(){scanf("%d%d%d%d",&a,&b,&c,&d);printf("%.f\n",fmax(0,fmin(b,d)-fmax(a,c)));}

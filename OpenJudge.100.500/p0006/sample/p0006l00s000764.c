@@ -1,0 +1,1 @@
+p=100000;main(a){for(scanf("%d",&a);a--;p=(p/1000+!!(p%1000))*1000)p+=p/20;exit(!printf("%d\n",p));}

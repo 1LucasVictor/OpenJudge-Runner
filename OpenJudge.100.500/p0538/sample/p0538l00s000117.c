@@ -1,0 +1,1 @@
+b;main(a){scanf("%d%d",&a,&b);printf("%d",a<10&&b<10?a*b:-1);}

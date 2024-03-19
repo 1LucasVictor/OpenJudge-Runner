@@ -1,0 +1,1 @@
+i,n,t;main(m){for(;scanf("%d",&i),n|i;n||printf("%d\n",m))n--?t+=i,m=t>m?t:m,t*=t>0:(m=~m,n=i,t=0);}

@@ -1,0 +1,17 @@
+instructions
+cache-references
+cache-misses
+branch-instructions
+branch-misses
+alignment-faults
+bpf-output
+context-switches
+cpu-clock
+cpu-migrations
+dummy
+emulation-faults
+major-faults
+minor-faults
+page-faults
+task-clock
+duration_time

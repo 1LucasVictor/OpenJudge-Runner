@@ -1,0 +1,1 @@
+a,b,c,n;main(t){for(scanf("%d",&n);n--;puts(a*a-b*b-c*c?"NO":"YES"))scanf("%d%d%d",&a,&b,&c),b>a&&(t=a,a=b,b=t),c>a&&(t=a,a=c,c=t);exit(0);}

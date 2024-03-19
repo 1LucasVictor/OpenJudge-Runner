@@ -1,0 +1,1 @@
+t,a,b;main(){for(;t=~scanf("%d%d",&a,&b);printf("%d %d\n",t,a/t*b))g(a,b);}g(x,y){return t=y?g(y,x%y):x;}

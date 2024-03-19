@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include<string.h>
+
+int main() {
+    int n;
+    int a[200010];
+    int b[200010];
+    scanf("%d",&n);
+    for(int i=2;i<=n;i++)
+       scanf("%d",&a[i]);
+    for(int i=2;i<=n;i++)
+        b[a[i]]++;
+    for(int i=1;i<=n;i++)
+        printf("%d\n",b[i]);
+    return 0;
+}
+

@@ -1,0 +1,1 @@
+main(){int a[100],n,i;int *p=a;scanf("%d",&n);for(i=n;i-->0;)scanf("%d",p++);while(--n)printf("%d ",*--p);printf("%d\n",*a);exit(0);}

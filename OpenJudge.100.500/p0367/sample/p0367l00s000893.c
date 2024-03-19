@@ -1,0 +1,1 @@
+a,b,z;main(c){scanf("%d%d%d",&a,&b,&c);for(;b+1-a;)c%a++?:z++;printf("%d\n",z);exit(0);}
